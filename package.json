@@ -1,0 +1,28 @@
+{
+  "name": "yanv",
+  "version": "0.0.0",
+  "description": "Yet another National Velocity",
+  "main": "main.js",
+  "scripts": {
+    "app": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hrysd/YaNV.git"
+  },
+  "keywords": [
+    "editor"
+  ],
+  "author": {
+    "name": "Hiroshi Yoshida",
+    "url": "hrysd.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hrysd/YaNV/issues"
+  },
+  "homepage": "https://github.com/hrysd/YaNV#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^0.34.0"
+  }
+}
