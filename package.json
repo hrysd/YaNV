@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/hrysd/YaNV#readme",
   "devDependencies": {
-    "electron-prebuilt": "^0.34.0"
+    "electron-prebuilt": "^0.37.2"
   }
 }

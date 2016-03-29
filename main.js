@@ -1,14 +1,12 @@
 'use strict';
 
-const app           = require('app'),
-      BrowserWindow = require('browser-window');
+const App           = require('electron').app,
+      BrowserWindow = require('electron').BrowserWindow;
 
-require('crash-reporter').start();
-
-app.on('ready', () => {
+App.on('ready', () => {
   let mainWindow = new BrowserWindow({});
 
-  mainWindow.loadUrl(`file://${__dirname}/index.html`);
+  mainWindow.loadURL(`file://${__dirname}/index.html`);
 
   mainWindow.on('closed', app.quit);
 });
