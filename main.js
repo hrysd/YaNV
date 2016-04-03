@@ -8,5 +8,5 @@ App.on('ready', () => {
 
   mainWindow.loadURL(`file://${__dirname}/index.html`);
 
-  mainWindow.on('closed', app.quit);
+  mainWindow.on('closed', App.quit);
 });
