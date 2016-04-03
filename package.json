@@ -4,6 +4,7 @@
   "description": "Yet another National Velocity",
   "main": "main.js",
   "scripts": {
+    "build": "browserify -t babelify index.js -o bundle.js",
     "app": "electron main.js"
   },
   "repository": {
@@ -23,6 +24,13 @@
   },
   "homepage": "https://github.com/hrysd/YaNV#readme",
   "devDependencies": {
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
     "electron-prebuilt": "^0.37.2"
+  },
+  "dependencies": {
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8"
   }
 }
