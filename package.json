@@ -4,7 +4,7 @@
   "description": "Yet another National Velocity",
   "main": "main.js",
   "scripts": {
-    "build": "browserify -t babelify index.js -o bundle.js",
+    "build": "browserify -t babelify src/index.js -o bundle.js",
     "app": "electron main.js"
   },
   "repository": {
