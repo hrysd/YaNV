@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "babel-plugin-transform-es2015-modules-commonjs": "^6.7.4",
+    "draft-js": "^0.3.0",
     "react": "^0.14.8",
     "react-dom": "^0.14.8"
   }
