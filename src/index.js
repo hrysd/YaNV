@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 
 import {CompositeDecorator, Editor, EditorState} from 'draft-js';
 
-import {Heading} from './strategies/heading'
-import {Code} from './strategies/code'
+import {Heading} from './strategies/heading';
+import {Code} from './strategies/code';
+import {Strong} from './strategies/strong';
 
 const compositeDecorator = new CompositeDecorator([
   {
@@ -14,6 +15,10 @@ const compositeDecorator = new CompositeDecorator([
   {
     strategy:  Code.strategy,
     component: Code.component
+  },
+  {
+    strategy:  Strong.strategy,
+    component: Strong.component
   }
 ]);
 
