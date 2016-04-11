@@ -1,7 +1,7 @@
 {
   "name": "yanv",
   "version": "0.0.0",
-  "description": "Yet another National Velocity",
+  "description": "Not yet",
   "main": "main.js",
   "scripts": {
     "build": "browserify -t babelify src/index.js -o bundle.js",
