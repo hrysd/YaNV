@@ -8,18 +8,7 @@ import {Code} from './strategies/code';
 import {Strong} from './strategies/strong';
 
 const compositeDecorator = new CompositeDecorator([
-  {
-    strategy:  Heading.strategy,
-    component: Heading.component
-  },
-  {
-    strategy:  Code.strategy,
-    component: Code.component
-  },
-  {
-    strategy:  Strong.strategy,
-    component: Strong.component
-  }
+  Heading, Code, Strong
 ]);
 
 class MyEditor extends React.Component {
