@@ -1,19 +1,12 @@
 import React from 'react';
 
-const CODE_REGEX = /`([\s\S]*?[^`])`/g;
+import {findInlineContent} from './finder';
 
-function findWithRegex(regex, contentBlock, callback) {
-  const text = contentBlock.getText();
-  let matchArr, start;
-  while ((matchArr = regex.exec(text)) !== null) {
-    start = matchArr.index;
-    callback(start, start + matchArr[0].length);
-  }
-}
+const CODE_REGEX = /`([\s\S]*?[^`])`/g;
 
 const Code = {
   strategy: function(contentBlock, callback) {
-    findWithRegex(CODE_REGEX, contentBlock, callback);
+    findInlineContent(CODE_REGEX, contentBlock, callback);
   },
 
   component: function(props) {

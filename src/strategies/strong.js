@@ -1,19 +1,12 @@
 import React from 'react';
 
-const STRONG_REGEX = /__([\s\S]*?[^_])__/g;
+import {findInlineContent} from './finder';
 
-function findWithRegex(regex, contentBlock, callback) {
-  const text = contentBlock.getText();
-  let matchArr, start;
-  while ((matchArr = regex.exec(text)) !== null) {
-    start = matchArr.index;
-    callback(start, start + matchArr[0].length);
-  }
-}
+const STRONG_REGEX = /__([\s\S]*?[^_])__/g;
 
 const Strong = {
   strategy: function(contentBlock, callback) {
-    findWithRegex(STRONG_REGEX, contentBlock, callback);
+    findInlineContent(STRONG_REGEX, contentBlock, callback);
   },
 
   component: function(props) {
