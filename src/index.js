@@ -23,8 +23,8 @@ class MyEditor extends React.Component {
   styles() {
     return {
       fontFamily: '\'Helvetica\', sans-serif',
-      border: '1px solid #ccc',
-      cursor: 'text'
+      cursor: 'text',
+      margin: '50px 30px'
     };
   }
 
