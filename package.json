@@ -1,7 +1,7 @@
 {
   "name": "yanv",
   "version": "0.0.0",
-  "description": "Yet another National Velocity",
+  "description": "Not yet",
   "main": "main.js",
   "scripts": {
     "build": "browserify -t babelify src/index.js -o bundle.js",
@@ -24,13 +24,16 @@
   },
   "homepage": "https://github.com/hrysd/YaNV#readme",
   "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.7.4",
+    "babel-plugin-transform-object-rest-spread": "^6.6.5",
     "babel-preset-react": "^6.5.0",
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
     "electron-prebuilt": "^0.37.2"
   },
   "dependencies": {
-    "react": "^0.14.8",
-    "react-dom": "^0.14.8"
+    "draft-js": "0.4.0",
+    "react": "15.0.1",
+    "react-dom": "15.0.1"
   }
 }

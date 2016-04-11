@@ -4,7 +4,9 @@ const App           = require('electron').app,
       BrowserWindow = require('electron').BrowserWindow;
 
 App.on('ready', () => {
-  let mainWindow = new BrowserWindow({});
+  let mainWindow = new BrowserWindow({
+    titleBarStyle: 'hidden-inset'
+  });
 
   mainWindow.loadURL(`file://${__dirname}/index.html`);
 
