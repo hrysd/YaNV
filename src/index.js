@@ -2,12 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import {CompositeDecorator, Editor, EditorState} from 'draft-js';
-import {headingStarategy, handleHeading} from './strategies'
+
+import {Heading} from './strategies/heading'
+import {Code} from './strategies/code'
 
 const compositeDecorator = new CompositeDecorator([
   {
-    strategy: headingStarategy,
-    component: handleHeading
+    strategy:  Heading.strategy,
+    component: Heading.component
+  },
+  {
+    strategy:  Code.strategy,
+    component: Code.component
   }
 ]);
 
