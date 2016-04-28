@@ -30,10 +30,10 @@
     "babel-preset-react": "^6.5.0",
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
-    "electron-prebuilt": "^0.37.2",
     "watchify": "^3.7.0"
   },
   "dependencies": {
+    "electron-prebuilt": "^0.37.2",
     "draft-js": "0.4.0",
     "react": "15.0.1",
     "react-dom": "15.0.1"
